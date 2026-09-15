@@ -3,9 +3,9 @@ import { sleep, check } from 'k6';
 
 export const options = {
   vus: 30,
-  duration: "1m",
+  duration: '1m',
   thresholds: {
-    http_req_duration: ['p(95)<1000'],
+    http_req_duration: ['p(95)<470'],
     http_req_failed: ['rate<0.01'],
   },
 };
